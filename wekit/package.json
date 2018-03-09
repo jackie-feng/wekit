@@ -1,0 +1,21 @@
+{
+  "name": "wekit",
+  "version": "1.2.0",
+  "description": "",
+  "main": "dist/wepy.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel --presets es2015,stage-1 src/ --out-dir dist/ --source-maps",
+    "dev": "babel --presets es2015,stage-1 src/ --out-dir ../wyeth-wx/dist/npm/wekit/dist/ --source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-compile": "npm run build -- --watch",
+    "watch": "npm run watch-compile"
+  },
+  "author": "fengjc",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-1": "^6.16.0"
+  }
+}
